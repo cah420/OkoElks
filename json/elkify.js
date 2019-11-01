@@ -1,5 +1,5 @@
 var elkPrefix = "elk";
-var elkCount = 10;
+var elkCount = 8;
 
 function getElk(){
 	var elkNum = Math.floor(Math.random()*elkCount);
