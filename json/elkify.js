@@ -1,25 +1,25 @@
-var nicPrefix = "nic";
-var nicCount = 20;
+var elkPrefix = "elk";
+var elkCount = 10;
 
-function getNic(){
-	var nicNum = Math.floor(Math.random()*nicCount);
-	return "images/"+nicPrefix+nicNum+".jpg";
+function getElk(){
+	var elkNum = Math.floor(Math.random()*elkCount);
+	return "images/"+elkPrefix+elkNum+".jpg";
 }
 
 function replaceImages(){
 	Array.prototype.map.call(document.images,function(img){
-		//don't re-nic images
-		if(img.className.indexOf('nicced')>-1){
+		//don't re-elk images
+		if(img.className.indexOf('elked')>-1){
 			return;
 		}
-		img.classList.add('nicced');
+		img.classList.add('elked');
 		//retain the original dimensions
 		var width = img.width;
 		var height = img.height;
 		img.style.width = width+'px';
 		img.style.height = height+'px';
 
-		var loc = chrome.extension.getURL(getNic());
+		var loc = chrome.extension.getURL(getElk());
 		img.src = loc;
 		if(img.srcset){
 			img.srcset = loc;
