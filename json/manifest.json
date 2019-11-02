@@ -16,7 +16,7 @@
 	"content_scripts":[
 		{
 			"matches":["<all_urls>"],
-			"js":["cageify.js"]
+			"js":["elkify.js"]
 		}
 	],
 	"homepage_url": "https://github.com/cah420/OkoElks",
