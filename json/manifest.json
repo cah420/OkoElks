@@ -11,7 +11,7 @@
 		}
 	},
 	"icons": {
-		"128": "images/oko.png",
+		"128": "images/oko.png"
 	},
 	"content_scripts":[
 		{
